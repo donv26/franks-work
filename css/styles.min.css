@@ -20,7 +20,7 @@ html {
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    display: block
+    display: block;
 }
 
 body {
@@ -16466,7 +16466,7 @@ a:hover {
     height: 67px;
     width: 176px;
     text-align: center;
-    margin-left: 125px;
+    margin-left: 150px;
     padding: 0 30px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
