@@ -689,7 +689,7 @@
 
 		}
 
-		tabs()
+		// tabs()
 
 		// video trigger
 
