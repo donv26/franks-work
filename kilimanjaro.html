@@ -8,10 +8,87 @@
 	<meta name="keywords" content="keywords" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
 	<title>Augustino Expeditions</title>
 	<!-- styles-->
 	<link rel="stylesheet" href="css/styles.min.css" />
 	<!-- web-font loader-->
+	<style>
+		.container {
+			margin: 50px;
+		}
+
+		.nav-tabs {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		@media (min-width: 768px) {
+			.panel-heading {
+				display: none;
+			}
+
+			.panel {
+				border: none;
+				box-shadow: none;
+			}
+
+			.panel-collapse {
+				height: auto;
+			}
+
+			.panel-collapse.collapse {
+				display: block;
+			}
+		}
+
+		.tabs {
+			background-color: #f79321;
+			color: white;
+			padding: 5px;
+			width: 18vw;
+			display: flex;
+			justify-content: center;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.tabs a{
+			color: white;
+		}
+
+		@media (max-width: 767px) {
+			.tab-content .tab-pane {
+				display: block;
+			}
+
+			.nav-tabs {
+				display: none;
+			}
+
+			.panel-title a {
+				display: block;
+			}
+
+			.panel {
+				margin: 0;
+				box-shadow: none;
+				border-radius: 0;
+				margin-top: -2px;
+			}
+
+			.tab-pane:first-child .panel {
+				border-radius: 5px 5px 0 0;
+			}
+
+			.tab-pane:last-child .panel {
+				border-radius: 0 0 5px 5px;
+			}
+		}
+	</style>
 	<script>
 		WebFontConfig = {
 
