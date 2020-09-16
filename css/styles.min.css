@@ -16457,7 +16457,7 @@ a:hover {
 
 .header__button {
     display: none;
-    color: #181919;
+   
     font-size: 14px;
     line-height: 68px;
     font-weight: 700;
@@ -16487,8 +16487,7 @@ a:hover {
 }
 
 .header__button:hover {
-    color: #fff;
-    background: #282f34;
+   
     text-decoration: none
 }
 
