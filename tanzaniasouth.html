@@ -8,39 +8,38 @@
 	<meta name="keywords" content="keywords" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
 	<title>Augustino Expeditions</title>
 	<!-- styles-->
 	<link rel="stylesheet" href="css/styles.min.css" />
 	<style>
 		.container {
-			margin: 50px;
-		}
-
-		.nav-tabs {
+  margin: 50px;
+}
+.nav-tabs {
 			display: flex;
 			justify-content: space-evenly;
 		}
-
-		@media (min-width: 768px) {
-			.panel-heading {
-				display: none;
-			}
-
-			.panel {
-				border: none;
-				box-shadow: none;
-			}
-
-			.panel-collapse {
-				height: auto;
-			}
-
-			.panel-collapse.collapse {
-				display: block;
-			}
-		}
-
-		.tabs {
+@media (min-width: 768px) {
+  .panel-heading {
+    display: none;
+  }
+  .panel {
+    border: none;
+    box-shadow: none;
+  }
+  .panel-collapse {
+    height: auto;
+  }
+  .panel-collapse.collapse {
+    display: block;
+  }
+}
+.tabs {
 			background-color: #f79321;
 			color: white;
 			padding: 5px;
@@ -50,36 +49,32 @@
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px;
 		}
-
-
-		@media (max-width: 767px) {
-			.tab-content .tab-pane {
-				display: block;
-			}
-
-			.nav-tabs {
-				display: none;
-			}
-
-			.panel-title a {
-				display: block;
-			}
-
-			.panel {
-				margin: 0;
-				box-shadow: none;
-				border-radius: 0;
-				margin-top: -2px;
-			}
-
-			.tab-pane:first-child .panel {
-				border-radius: 5px 5px 0 0;
-			}
-
-			.tab-pane:last-child .panel {
-				border-radius: 0 0 5px 5px;
-			}
+		.tabs a{
+			color: white;
 		}
+@media (max-width: 767px) {
+  .tab-content .tab-pane {
+    display: block;
+  }
+  .nav-tabs {
+    display: none;
+  }
+  .panel-title a {
+    display: block;
+  }
+  .panel {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: -2px;
+  }
+  .tab-pane:first-child .panel {
+    border-radius: 5px 5px 0 0;
+  }
+  .tab-pane:last-child .panel {
+    border-radius: 0 0 5px 5px;
+  }
+}
 	</style>
 	<!-- web-font loader-->
 	<script>
@@ -181,30 +176,6 @@
 							</svg> <span>Itineraries</span>
 						</h6>
 					</div>
-					<!-- <div class="screen__item"><a class="screen__link" href="about.html">About</a></div>
-					<div class="screen__item"><a class="screen__link" href="services.html">Services</a></div>
-					<div class="screen__item"><a class="screen__link" href="blog-details.html">Blog Details</a></div>
-					<div class="screen__item"><a class="screen__link" href="gallery.html">Gallery</a></div>
-					<div class="screen__item"><a class="screen__link" href="gallery_2.html">Gallery v.2</a></div>
-					<div class="screen__item"><a class="screen__link" href="calendar.html">Calendar</a></div>
-					<div class="screen__item"><a class="screen__link" href="membership.html">Membership</a></div>
-					<div class="screen__item"><a class="screen__link" href="events.html">Events</a></div>
-					<div class="screen__item"><a class="screen__link" href="event-details.html">Event Details</a></div>
-					<div class="screen__item"><a class="screen__link" href="tickets.html">Tickets</a></div>
-					<div class="screen__item"><a class="screen__link" href="foundation.html">Foundation</a></div>
-					<div class="screen__item"><a class="screen__link" href="education.html">Education</a></div>
-					<div class="screen__item"><a class="screen__link" href="donation.html">Donation</a></div>
-					<div class="screen__item"><a class="screen__link" href="donation-details.html">Donation Details</a>
-					</div>
-					<div class="screen__item"><a class="screen__link" href="animals.html">Animals</a></div>
-					<div class="screen__item"><a class="screen__link" href="animal-details.html">Animal Details</a>
-					</div>
-					<div class="screen__item"><a class="screen__link" href="safari-tours.html">Safari Tours</a></div>
-					<div class="screen__item"><a class="screen__link" href="tour-details.html">Tour Details</a></div>
-					<div class="screen__item"><a class="screen__link" href="typography.html">Typography</a></div>
-					<div class="screen__item"><a class="screen__link" href="faq.html">Faq</a></div>
-					<div class="screen__item"><a class="screen__link" href="map.html">Map</a></div>
-					<div class="screen__item"><a class="screen__link" href="404.html">404</a></div> -->
 				</div>
 			</div>
 			<div class="menu-dropdown__inner" data-value="shop">
@@ -239,17 +210,6 @@
 					<div class="screen__item"><a class="screen__link" href="prices.html">Kilimanjaro Price List</a></div>
 					<div class="screen__item"><a class="screen__link" href="kilimeals.html">Kilimanjaro Meals</a></div>
 					<div class="screen__item"><a class="screen__link" href="fullmoon.html">Kilimanjaro Full Moon</a></div>
-					<!-- <div class="screen__item"><a class="screen__link" href="charts.html">Charts</a></div>
-					<div class="screen__item"><a class="screen__link" href="counters.html">Counters</a></div> -->
-					<!-- <div class="screen__item"><a class="screen__link" href="forms.html">Forms</a></div>
-					<div class="screen__item"><a class="screen__link" href="icon-list.html">Icon List</a></div>
-					<div class="screen__item"><a class="screen__link" href="logos.html">Logos</a></div>
-					<div class="screen__item"><a class="screen__link" href="paginations.html">Paginations</a></div>
-					<div class="screen__item"><a class="screen__link" href="pricing-tables.html">Pricing Tables</a>
-					</div>
-					<div class="screen__item"><a class="screen__link" href="tabs.html">Tabs</a></div>
-					<div class="screen__item"><a class="screen__link" href="team.html">Tean</a></div>
-					<div class="screen__item"><a class="screen__link" href="testimonials.html">Testimonials</a></div> -->
 				</div>
 			</div>
 			<div class="menu-dropdown__inner" data-value="language">
@@ -265,7 +225,6 @@
 					<div class="screen__item"><a class="screen__link" href="tanzanianorth.html">Tanzania Northern Park</a></div>
 					<div class="screen__item"><a class="screen__link" href="tanzaniasouth.html">Tanzania Southern Park</a></div>
 					<div class="screen__item"><a class="screen__link" href="tanzaniawest.html">Tanzania Western Park</a></div>
-					<!-- <div class="screen__item"><a class="screen__link" href="javascript:void(0);">Russian</a></div> -->
 				</div>
 			</div>
 		</div>
@@ -344,25 +303,7 @@
 			<div class="header__lower">
 				<div class="row">
 					<div class="col-auto d-flex align-items-center">
-						<!-- <ul class="lower-menu">
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Membership</a></li>
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Education</a></li>
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Map Zoo</a></li>
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Events</a></li>
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Donate</a></li>
-							<li class="lower-menu__item"><a class="lower-menu__link" href="#">Foundation</a></li>
-						</ul> -->
-						<!-- lang select start-->
-						<!-- <ul class="lang-select">
-							<li class="lang-select__item lang-select__item--active"><span>English</span>
-								<ul class="lang-select__sub-list">
-									<li><a href="#">French</a></li>
-									<li><a href="#">Spanish</a></li>
-									<li><a href="#">Deutsch</a></li>
-									<li><a href="#">Russian</a></li>
-								</ul>
-							</li>
-						</ul> -->
+						
 						<!-- lang select end-->
 						<ul class="header__socials">
 							<li><a class="item--facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -441,7 +382,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent=".tab-pane" href="#collapseOne">
-										<h5>3 overview</h5>
+										3 overview
 									</a>
 								</h4>
 							</div>
